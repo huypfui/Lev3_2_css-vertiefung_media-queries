@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RockSalt;
+    src: url(../fonts/RockSalt-Regular.ttf);
+}
+
+body {
+    width: 1201px;
+    margin: auto;
+}
+
+header nav {
+    font-family: RockSalt;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dalmatiner {
+    background-color: #DF8480;
+    background-image: url(../img/dog_catching_snack.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    /* height: 600px; */
+    height: 50vh;
+}
+
+.dalmatiner h2 {
+    color: white;
+    font-size: 3rem;
+    font-family: Nunito;
+    text-align: right;
+    padding-top: 3vh;
+    padding-right: 630px;
+}
+
+/* How it works Section */
+
+.how-it-works {
+    color:#DF8480;
+    font-size: 3.5rem;
+    font-family: Nunito;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.howTo {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+.howTo article {
+    margin: 2vh 2vw;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    height: 200px;
+    font-family: Nunito;
+    text-align: center;
+}
+
+.howTo article h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #DF8480 ;
+}
+
+.howTo p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 3vh;
+}
+
+
+/* Whats's on the menu? */
+
+.menuH2 {
+    color:#DF8480;
+    font-size: 3.5rem;
+    font-family: Nunito;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35vh;
+}
+
+.menu article {
+    width: 300px;
+    height:250px;
+    font-family: Nunito;
+    margin-top: 3vh;
+}
+
+.frenchbull img {
+    width: 95%;
+    border-radius: 10px;
+}
+
+.menu article:nth-of-type(2) img {
+    width: 80%;
+}
+
+.menu article:nth-of-type(2) .locally {
+    font-weight: bold;
+    z-index: 1;
+}
+
+.menu article:nth-of-type(2) .delicious {
+    font-weight: bold;
+    z-index: 1;
+    text-align: right;
+}
+
+.menu article:nth-of-type(2) .organic {
+    font-weight: bold;
+    z-index: 1;
+}
+
+.menu article:nth-of-type(3) {
+    background-color: #DF8480;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #242424;
+    height: 30vh;
+    font-family: Nunito;
+}
+
+.footer article {
+    width: 380px;
+    height: 55px;
+    margin-top: 2vh;
+}
+
+.notify {
+    color: white;
+    padding:15px;
+}
+
+.email {
+    border-radius: 30px;
+    background: white;
+    color: #7B7B7B;
+    padding:15px;
+}
+
+.email a {
+    text-decoration: none;
+    color: #7B7B7B;
+    
+}
+
+.signUp {
+    border-radius: 30px;
+    background:#DF8480;
+    padding:15px;
+}
+
+.signUp a {
+    text-decoration: none;
+    color: white;
+}
+
+/* icons */
+
+.iconsCopy {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #242424;
+    height: 8vh;
+    font-family: Nunito;
+}
+
+.iconsCopy {
+    padding-left: 2vw;
+}
+
+.icons img:nth-of-type(1) {
+    padding-bottom: 5px;
+}
+
+.icons img:nth-of-type(3) {
+    padding-bottom: 2px;
+}
+
+
+.copyright p {
+    color: white;
+    font-size: 1.1rem;
+    padding-right: 2vw;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 900px;
+    }
+    .dalmatiner h2 {
+        padding-right: 470px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 600px;
+    }
+    
+    .dalmatiner h2 {
+        color: #DF8480;
+        font-size: 1.5rem;
+        font-family: Nunito;
+        text-align: right;
+        padding-top: 3vh;
+    }
+
+    .dalmatiner {
+        background-image: url(../img/dog_catching_snack.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 70%;
+        /* height: 600px; */
+        height: 50vh;
+    }
+
+}
